@@ -6,7 +6,6 @@ function Navbar() {
     <div>
       <nav className="navbar">
         <div className="navbar__logo__oval">
-          <img src="../assets/Home.png" />
           <div className="navbar__line"></div>
         </div>
         <ul className="navbar__menu">

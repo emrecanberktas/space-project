@@ -1,16 +1,71 @@
-.Home {
+.home {
   background-image: url("../assets/HomePageBackground.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-bottom: 106px;
 }
 
 .homepage__biggest__p {
-  font-family: bellefair;
+  font-family: "Bellefair", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 150px;
   line-height: 172px;
   color: #ffffff;
+  margin: 0 5% 0 0;
 }
 
 .homepage__bigger__p {
-  font-family: barlow;
+  font-family: "Barlow", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 4.725px;
+  color: #d0d6f9;
+}
+
+.homepage__smallest__p {
+  font-family: "Barlow", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #d0d6f9;
+}
+
+.homepage__left__side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 450px;
+  height: 382px;
+  margin: 161px 0px;
+}
+.homepage__right__side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 274px;
+  height: 274px;
+  margin: 0;
+  background-color: #ffffff;
+  color: #0b0d17;
+  font-family: "Bellefair", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;
+  letter-spacing: 2px;
+}
+
+.home__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }

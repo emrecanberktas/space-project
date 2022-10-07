@@ -4,10 +4,12 @@
   margin: 55px 64px;
   border-radius: 50%;
   background-color: white;
+  background-image: url("../assets/Star.png");
 }
 
 .navbar {
   display: flex;
+  flex-direction: row;
 }
 
 .navbar__menu {
@@ -20,7 +22,7 @@
   width: 830px;
   height: 96px;
   margin-top: 40px;
-  margin-left: 47%;
+  margin-left: 47.6%;
 }
 .navbar__item {
   color: white;
@@ -43,4 +45,6 @@
   background-color: #ffffff;
   mix-blend-mode: normal;
   opacity: 0.25;
+  position: absolute;
+  margin: 30px 0 0 30%;
 }
