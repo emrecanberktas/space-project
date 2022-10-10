@@ -10,29 +10,25 @@ function Navbar() {
         </div>
         <ul className="navbar__menu">
           <li className="navbar__item">
-            <div href="#" className="navbar__link">
-              <p className="homepage__numbers">00</p>
-              Home
-            </div>
+            <p className="navbar__numbers">00</p>
+            &emsp;
+            <p className="navbar__titles">HOME</p>
           </li>
           <li className="navbar__item">
-            <div href="#" className="navbar__link">
-              <p className="homepage__numbers">01</p>
-              About
-            </div>
+            <p className="navbar__numbers">01</p>
+            &emsp;
+            <p className="navbar__titles">DESTINATION</p>
           </li>
 
           <li className="navbar__item">
-            <div href="#" className="navbar__link">
-              <p className="homepage__numbers">02</p>
-              Contact
-            </div>
+            <p className="navbar__numbers">02</p>
+            &emsp;
+            <p className="navbar__titles">CONTACT</p>
           </li>
           <li className="navbar__item">
-            <div className="navbar__link">
-              <p className="homepage__numbers">03</p>
-              Technology
-            </div>
+            <p className="navbar__numbers">03</p>
+            &emsp;
+            <p className="navbar__titles">TECHNOLOGY</p>
           </li>
         </ul>
       </nav>
