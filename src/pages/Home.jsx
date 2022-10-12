@@ -9,8 +9,8 @@ function Home() {
       <div className="home__container">
         <div className="homepage__left__side">
           <p className="homepage__bigger__p">SO, YOU WANT TO TRAVEL TO</p>
-          <p className="homepage__biggest__p">SPACE</p>
-          <p className="homepage__smallest__p">
+          <p className="homepage__title">SPACE</p>
+          <p className="homepage__content">
             Let’s face it; if you want to go to space, you might as well
             genuinely go to outer space and not hover kind of on the edge of it.
             Well sit back, and relax because we’ll give you a truly out of this

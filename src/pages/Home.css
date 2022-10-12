@@ -5,7 +5,7 @@
   padding-bottom: 106px;
 }
 
-.homepage__biggest__p {
+.homepage__title {
   font-family: "Bellefair", serif;
   font-style: normal;
   font-weight: 400;
@@ -25,7 +25,7 @@
   color: #d0d6f9;
 }
 
-.homepage__smallest__p {
+.homepage__content {
   font-family: "Barlow", sans-serif;
   font-style: normal;
   font-weight: 400;
