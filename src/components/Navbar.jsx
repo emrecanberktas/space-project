@@ -23,7 +23,7 @@ function Navbar() {
           <li className="navbar__item">
             <p className="navbar__numbers">02</p>
             &emsp;
-            <p className="navbar__titles">CONTACT</p>
+            <p className="navbar__titles">CREW</p>
           </li>
           <li className="navbar__item">
             <p className="navbar__numbers">03</p>

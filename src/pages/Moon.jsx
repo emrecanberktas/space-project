@@ -11,16 +11,17 @@ function Moon() {
         <div className="moon__left__side">
           <div className="moon__left__side__title">
             <h2>01</h2>
-            <h2>PICK YOUR DESTINATION</h2>
-            <div className="moon__image"></div>
+            &emsp;
+            <h3>PICK YOUR DESTINATION</h3>
           </div>
+          <div className="moon__image"></div>
         </div>
         <div className="moon__right__side">
           <div className="destinations">
-            <Link to="/moon"></Link>
-            <Link to="/mars"></Link>
-            <Link to="/europa"></Link>
-            <Link to="/titan"></Link>
+            <Link to="/moon">MOON</Link>
+            <Link to="/mars">MARS</Link>
+            <Link to="/europa">EUROPA</Link>
+            <Link to="/titan">TITAN</Link>
           </div>
           <div className="moon__right__side__title">MOON</div>
           <div className="moon__right__side__content">
@@ -31,7 +32,16 @@ function Moon() {
               and Apollo 11 landing sites.
             </p>
           </div>
-          <div className="moon__travel__infos"></div>
+          <div className="moon__travel__infos">
+            <div className="moon__travel__infos__distance">
+              <h2>AVG. DISTANCE</h2>
+              <p>384,400 km</p>
+            </div>
+            <div className="moon__travel__infos__travel__time">
+              <h2>EST. TRAVEL TIME</h2>
+              <p>3 DAYS</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
