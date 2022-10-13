@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 function Navbar() {
@@ -12,23 +13,23 @@ function Navbar() {
           <li className="navbar__item">
             <p className="navbar__numbers">00</p>
             &emsp;
-            <p className="navbar__titles">HOME</p>
+            <Link className="navbar__titles">HOME</Link>
           </li>
           <li className="navbar__item">
             <p className="navbar__numbers">01</p>
             &emsp;
-            <p className="navbar__titles">DESTINATION</p>
+            <Link className="navbar__titles">DESTINATION</Link>
           </li>
 
           <li className="navbar__item">
             <p className="navbar__numbers">02</p>
             &emsp;
-            <p className="navbar__titles">CREW</p>
+            <Link className="navbar__titles">CREW</Link>
           </li>
           <li className="navbar__item">
             <p className="navbar__numbers">03</p>
             &emsp;
-            <p className="navbar__titles">TECHNOLOGY</p>
+            <Link className="navbar__titles">TECHNOLOGY</Link>
           </li>
         </ul>
       </nav>

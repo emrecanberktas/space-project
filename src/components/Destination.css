@@ -1,24 +1,23 @@
-.moon {
+.destination {
   background-image: url("..//assets/DestinationBackground.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
-.moon__image {
-  background-image: url("..//assets/Moon.png");
+.destination__image {
   background-repeat: no-repeat;
   width: 445px;
   height: 445px;
   margin: 50px auto;
 }
 
-.moon__container {
+.destination__container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
-.moon__right__side {
+.destination__right__side {
   width: 445px;
   height: 472px;
   display: flex;
@@ -28,7 +27,7 @@
   padding-top: 150px;
 }
 
-.moon__right__side__title {
+.destination__right__side__title {
   font-family: "Bellefair", serif;
   font-style: normal;
   font-weight: 400;
@@ -38,7 +37,7 @@
   padding: 14px 0px;
 }
 
-.moon__right__side__content {
+.destination__right__side__content {
   color: #d0d6f9;
   font-family: "Barlow", serif;
   font-style: normal;
@@ -47,7 +46,7 @@
   line-height: 32px;
 }
 
-.moon__travel__infos {
+.destination__travel__infos {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -56,7 +55,7 @@
   color: #d0d6f9;
 }
 
-.moon__travel__infos h2 {
+.destination__travel__infos h2 {
   color: #d0d6f9;
   font-family: "Barlow", serif;
   font-style: normal;
@@ -67,7 +66,7 @@
   margin: 28px 0 12px 0;
 }
 
-.moon__travel__infos p {
+.destination__travel__infos p {
   color: #ffffff;
   font-family: "Bellefair", serif;
   font-weight: 400;
@@ -81,21 +80,15 @@
   flex-direction: row;
   justify-content: space-between;
   margin: 30px 0;
-  color: #d0d6f9;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 2.7px;
 }
 
-.moon__left__side__title {
+.destination__left__side__title {
   display: flex;
   flex-direction: row;
   padding: 50px;
 }
 
-.moon__left__side__title h2 {
+.destination__left__side__title h2 {
   font-family: "Barlow", serif;
   font-style: normal;
   font-weight: 700;
@@ -107,7 +100,7 @@
   opacity: 0.25;
 }
 
-.moon__left__side__title h3 {
+.destination__left__side__title h3 {
   font-family: "Barlow", serif;
   font-style: normal;
   font-weight: 400;

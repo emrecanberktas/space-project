@@ -18,10 +18,18 @@ function Moon() {
         </div>
         <div className="moon__right__side">
           <div className="destinations">
-            <Link to="/moon">MOON</Link>
-            <Link to="/mars">MARS</Link>
-            <Link to="/europa">EUROPA</Link>
-            <Link to="/titan">TITAN</Link>
+            <Link className="destinations__links" to="/moon">
+              MOON
+            </Link>
+            <Link className="destinations__links" to="/mars">
+              MARS
+            </Link>
+            <Link className="destinations__links" to="/europa">
+              EUROPA
+            </Link>
+            <Link className="destinations__links" to="/titan">
+              TITAN
+            </Link>
           </div>
           <div className="moon__right__side__title">MOON</div>
           <div className="moon__right__side__content">
