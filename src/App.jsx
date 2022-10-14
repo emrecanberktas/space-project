@@ -4,16 +4,37 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Destination from "./components/Destination";
 import axios from "axios";
+import Crew from "./components/Crew";
 
 function App() {
   const [destinations, SetDestinations] = useState({});
+  const [crew, setCrew] = useState({});
+  const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
+  const getPlanetsData = () => {
     axios.get("./destinations.json").then((res) => {
       SetDestinations(res.data);
       console.log(destinations);
+      setLoading(false);
     });
+  };
+
+  const getCrewData = () => {
+    axios.get("./crew.json").then((res) => {
+      setCrew(res.data);
+      console.log(crew);
+      setLoading(false);
+    });
+  };
+
+  useEffect(() => {
+    getPlanetsData();
+    getCrewData();
   }, []);
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
   return (
     <div className="App">
       <Routes>
@@ -63,6 +84,17 @@ function App() {
               travelTime={destinations.titan.travelTime}
               title={destinations.titan.title}
               image={destinations.titan.image}
+            />
+          }
+        />
+        <Route
+          path="/commander"
+          element={
+            <Crew
+              name={crew.commander.name}
+              info={crew.commander.info}
+              image={crew.commander.image}
+              title={crew.commander.title}
             />
           }
         />

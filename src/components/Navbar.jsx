@@ -13,18 +13,24 @@ function Navbar() {
           <li className="navbar__item">
             <p className="navbar__numbers">00</p>
             &emsp;
-            <Link className="navbar__titles">HOME</Link>
+            <Link to="/" className="navbar__titles">
+              HOME
+            </Link>
           </li>
           <li className="navbar__item">
             <p className="navbar__numbers">01</p>
             &emsp;
-            <Link className="navbar__titles">DESTINATION</Link>
+            <Link to="/moon" className="navbar__titles">
+              DESTINATION
+            </Link>
           </li>
 
           <li className="navbar__item">
             <p className="navbar__numbers">02</p>
             &emsp;
-            <Link className="navbar__titles">CREW</Link>
+            <Link to="/commander" className="navbar__titles">
+              CREW
+            </Link>
           </li>
           <li className="navbar__item">
             <p className="navbar__numbers">03</p>
