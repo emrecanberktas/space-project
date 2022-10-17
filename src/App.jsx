@@ -7,8 +7,8 @@ import axios from "axios";
 import Crew from "./components/Crew";
 
 function App() {
-  const [destinations, SetDestinations] = useState({});
-  const [crew, setCrew] = useState({});
+  const [destinations, SetDestinations] = useState(null);
+  const [crew, setCrew] = useState(null);
   const [loading, setLoading] = useState(true);
 
   const getPlanetsData = () => {
@@ -32,9 +32,14 @@ function App() {
     getCrewData();
   }, []);
 
-  if (loading) {
+  if (!destinations) {
     return <div>Loading...</div>;
   }
+  if (!crew) {
+    return <div>Loading...</div>;
+  }
+  console.log(crew);
+
   return (
     <div className="App">
       <Routes>

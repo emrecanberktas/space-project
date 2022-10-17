@@ -15,7 +15,7 @@ function Destination(props) {
             <h3>PICK YOUR DESTINATION</h3>
           </div>
           <div className="destination__image">
-            <img src="" alt="planet image" />
+            <img src={props.image} alt="planet image" />
           </div>
         </div>
         <div className="destination__right__side">
