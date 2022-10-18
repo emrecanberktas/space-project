@@ -8,6 +8,8 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
   margin: 50px 0;
+  height: 700px;
+  width: 590px;
 }
 
 .crew__container {
@@ -83,17 +85,43 @@
   width: 444px;
 }
 
-.button__container {
+.buttons__section {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-evenly;
+  width: 150px;
+  padding: 50px 0;
 }
 
-.button {
+.button1 {
   width: 15px;
   height: 15px;
   border-radius: 50%;
   background-color: white;
-  color: white;
+  display: flex;
+  margin: 0;
+}
+.button2 {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  margin: 0;
+}
+.button3 {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  margin: 0;
+}
+.button4 {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  margin: 0;
 }
