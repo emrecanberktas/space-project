@@ -102,6 +102,7 @@
   mix-blend-mode: normal;
   color: #ffffff;
   opacity: 0.25;
+  padding: 6px;
 }
 
 .destination__left__side__title h3 {

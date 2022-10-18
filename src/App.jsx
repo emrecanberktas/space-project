@@ -103,6 +103,39 @@ function App() {
             />
           }
         />
+        <Route
+          path="/pilot"
+          element={
+            <Crew
+              name={crew.pilot.name}
+              info={crew.pilot.info}
+              image={crew.pilot.image}
+              title={crew.pilot.title}
+            />
+          }
+        />
+        <Route
+          path="/missionSpecialist"
+          element={
+            <Crew
+              name={crew.mission_specialist.name}
+              info={crew.mission_specialist.info}
+              image={crew.mission_specialist.image}
+              title={crew.mission_specialist.title}
+            />
+          }
+        />
+        <Route
+          path="/flightEngineer"
+          element={
+            <Crew
+              name={crew.flight_engineer.name}
+              info={crew.flight_engineer.info}
+              image={crew.flight_engineer.image}
+              title={crew.flight_engineer.title}
+            />
+          }
+        />
       </Routes>
     </div>
   );

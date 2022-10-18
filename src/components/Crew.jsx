@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar";
 import "./Crew.css";
+import { Link } from "react-router-dom";
 
 function Crew(props) {
   return (
@@ -16,9 +17,24 @@ function Crew(props) {
           <div className="crew__title">{props.title}</div>
           <div className="crew__name">{props.name}</div>
           <div className="crew__info">{props.info}</div>
-          <div className="buttons"></div>
+          <div className="buttons__section">
+            <Link className="button" to="/commander">
+              a
+            </Link>
+            <Link className="button" to="/pilot">
+              ad
+            </Link>
+            <Link className="button" to="/missionSpecialist">
+              cvb
+            </Link>
+            <Link className="button" to="/flightEngineer">
+              cvb
+            </Link>
+          </div>
         </div>
-        <div className="crew__image"></div>
+        <div className="crew__right__side">
+          <img className="crew__image" src={props.image} />
+        </div>
       </div>
     </div>
   );
