@@ -18,10 +18,10 @@ function Crew(props) {
           <div className="crew__name">{props.name}</div>
           <div className="crew__info">{props.info}</div>
           <div className="buttons__section">
-            <Link className="button1" to="/commander"></Link>
-            <Link className="button2" to="/pilot"></Link>
-            <Link className="button3" to="/missionSpecialist"></Link>
-            <Link className="button4" to="/flightEngineer"></Link>
+            <Link className="button" to="/commander"></Link>
+            <Link className="button" to="/pilot"></Link>
+            <Link className="button" to="/missionSpecialist"></Link>
+            <Link className="button" to="/flightEngineer"></Link>
           </div>
         </div>
         <div className="crew__right__side">

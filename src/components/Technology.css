@@ -1,0 +1,16 @@
+.technology {
+  background-image: url("assets/TechnologyBackground.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.button {
+  width: 80px;
+  height: 80px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  text-decoration: none;
+  margin: 32px;
+}

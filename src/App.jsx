@@ -5,10 +5,12 @@ import Home from "./pages/Home";
 import Destination from "./components/Destination";
 import axios from "axios";
 import Crew from "./components/Crew";
+import Technology from "./components/Technology";
 
 function App() {
   const [destinations, SetDestinations] = useState(null);
   const [crew, setCrew] = useState(null);
+  const [technology, setTechnology] = useState(null);
   const [loading, setLoading] = useState(true);
 
   const getPlanetsData = () => {
@@ -27,15 +29,27 @@ function App() {
     });
   };
 
+  const getTechnologyData = () => {
+    axios.get("./technology.json").then((res) => {
+      setTechnology(res.data);
+      console.log(technology);
+      setLoading(false);
+    });
+  };
+
   useEffect(() => {
     getPlanetsData();
     getCrewData();
+    getTechnologyData();
   }, []);
 
   if (!destinations) {
     return <div>Loading...</div>;
   }
   if (!crew) {
+    return <div>Loading...</div>;
+  }
+  if (!technology) {
     return <div>Loading...</div>;
   }
   console.log(crew);
@@ -133,6 +147,36 @@ function App() {
               info={crew.flight_engineer.info}
               image={crew.flight_engineer.image}
               title={crew.flight_engineer.title}
+            />
+          }
+        />
+        <Route
+          path="launchVehicle"
+          element={
+            <Technology
+              title={technology.launchVehicle.title}
+              content={technology.launchVehicle.content}
+              image={technology.launchVehicle.image}
+            />
+          }
+        />
+        <Route
+          path="spacePort"
+          element={
+            <Technology
+              title={technology.spacePort.title}
+              content={technology.spacePort.content}
+              image={technology.spacePort.image}
+            />
+          }
+        />
+        <Route
+          path="spaceCapsule"
+          element={
+            <Technology
+              title={technology.spaceCapsule.title}
+              content={technology.spaceCapsule.content}
+              image={technology.spaceCapsule.image}
             />
           }
         />
