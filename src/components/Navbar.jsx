@@ -35,7 +35,7 @@ function Navbar() {
           <li className="navbar__item">
             <p className="navbar__numbers">03</p>
             &emsp;
-            <Link to="launchVehicle" className="navbar__titles">
+            <Link to="/launchVehicle" className="navbar__titles">
               TECHNOLOGY
             </Link>
           </li>
