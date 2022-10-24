@@ -4,9 +4,10 @@
   background-size: 100% 100%;
 }
 
-.technology__leftside {
+.technology__container {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .technology__leftside__title {
@@ -80,4 +81,18 @@
   flex-direction: column;
   width: 470px;
   height: 303px;
+  margin-top: 150px;
+}
+
+.technology__content {
+  color: #d0d6f9;
+  font-family: "Barlow", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+}
+.technology__rightside {
+  margin: 100px 0 0 290px;
+  height: 710px;
 }
