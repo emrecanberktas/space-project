@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
-import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Destination from "./components/Destination";
 import axios from "axios";
 import Crew from "./components/Crew";
 import Technology from "./components/Technology";
+import "./App.css";
 
 function App() {
   const [destinations, SetDestinations] = useState(null);
