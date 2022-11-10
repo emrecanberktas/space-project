@@ -13,7 +13,7 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   const getPlanetsData = () => {
-    axios.get("./destinations.json").then((res) => {
+    axios.get("/destinations.json").then((res) => {
       SetDestinations(res.data);
       console.log(destinations);
       setLoading(false);
@@ -21,7 +21,7 @@ function App() {
   };
 
   const getCrewData = () => {
-    axios.get("./crew.json").then((res) => {
+    axios.get("/crew.json").then((res) => {
       setCrew(res.data);
       console.log(crew);
       setLoading(false);
@@ -29,7 +29,7 @@ function App() {
   };
 
   const getTechnologyData = () => {
-    axios.get("./technology.json").then((res) => {
+    axios.get("/technology.json").then((res) => {
       setTechnology(res.data);
       console.log(technology);
       setLoading(false);
