@@ -5,7 +5,6 @@ import Destination from "./components/Destination";
 import axios from "axios";
 import Crew from "./components/Crew";
 import Technology from "./components/Technology";
-import "./App.css";
 function App() {
   const [destinations, SetDestinations] = useState(null);
   const [crew, setCrew] = useState(null);
